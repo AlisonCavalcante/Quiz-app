@@ -1,0 +1,15 @@
+<div class="content">
+  <h1 class="title">"Quiz!!"</h1>
+  <div class="card" >
+    <div class="card-header">{{pergunta.pergunta}}</div>
+    <div class="card-body">
+      <div class="row button-content" *ngFor="let op of pergunta.opcoes">
+      <p class="col-1">{{op.letra}}</p>
+        <button (click)="resposta(pergunta.correta,op.letra)" class="btn col-11">{{op.opcao}}</button>
+      </div>
+    </div>
+    <div class="card-footer">
+    </div>
+  </div>
+</div>
+
