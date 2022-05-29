@@ -1,15 +1,25 @@
 <div class="content">
   <h1 class="title">"Quiz!!"</h1>
-  <div class="card" >
-    <div class="card-header">{{pergunta.pergunta}}</div>
-    <div class="card-body">
-      <div class="row button-content" *ngFor="let op of pergunta.opcoes">
-      <p class="col-1">{{op.letra}}</p>
-        <button (click)="resposta(pergunta.correta,op.letra)" class="btn col-11">{{op.opcao}}</button>
+  <div class="card">
+    <div class="card-header">
+      <div><h5>Usuário: {{userName}}</h5></div>
+      <div class="d-flex justify-content-between p-4">
+        <h4>Pontos: {{ pontos }}</h4>
+        <h4>60 sec</h4>
       </div>
     </div>
-    <div class="card-footer">
+    <div class="card-body">
+      <h3>{{ pergunta?.pergunta }}</h3>
+      <div class="row button-content" *ngFor="let op of pergunta?.opcoes">
+        <p class="col-1">{{ op.letra }}</p>
+        <button
+          (click)="validarResposta(pergunta.correta, op.letra)"
+          class="btn col-11"
+        >
+          {{ op.opcao }}
+        </button>
+      </div>
     </div>
+    <div class="card-footer"></div>
   </div>
 </div>
-

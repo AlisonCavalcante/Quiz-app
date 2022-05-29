@@ -10,6 +10,8 @@ export class HomeComponent implements OnInit {
   perguntas!: any[];
   pergunta!: any;
   index!: number;
+  pontos: number = 0;
+  userName: string = '';
   constructor(private perguntasService: PerguntasService) {}
 
   ngOnInit(): void {
@@ -18,6 +20,8 @@ export class HomeComponent implements OnInit {
       console.log(this.perguntas);
       this.getPerguntaAleatoria();
     });
+
+    this.getUser();
   }
 
   getPerguntaAleatoria() {
@@ -27,7 +31,13 @@ export class HomeComponent implements OnInit {
     console.log(this.pergunta);
   }
 
-  resposta(opcaoCorreta: string, resposta: string) {
-    console.log(`Opção Correrta: ${opcaoCorreta}, Resposta do Usuário: ${resposta}`)
+  validarResposta(opcaoCorreta: string, resposta: string) {
+    if(resposta == opcaoCorreta){
+
+    }
+  }
+
+  getUser(){
+    this.userName = localStorage.getItem('name')!;
   }
 }
