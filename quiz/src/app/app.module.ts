@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FinishComponent } from './pages/finish/finish.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    FinishComponent
   ],
   imports: [
     BrowserModule,
