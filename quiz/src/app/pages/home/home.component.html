@@ -3,8 +3,9 @@
   <div class="card" *ngIf="!finish">
     <div class="card-header">
       <div><h5>Usuário: {{userName}}</h5></div>
-      <div class="d-flex justify-content-between p-4">
+      <div class="d-flex justify-content-between p-3">
         <h4>Pontos: {{ pontos }}</h4>
+        <h5>Questão {{perguntaCorrente}} de {{totalPerguntas}}</h5>
         <h4>{{time}} sec</h4>
       </div>
     </div>
