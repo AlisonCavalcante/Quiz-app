@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   perguntaCorrente: number = 0;
   totalPerguntas!: number;
   interval$!: any;
+  progresso!: string;
+
   constructor(private perguntasService: PerguntasService) {}
 
   ngOnInit(): void {
@@ -57,6 +59,7 @@ export class HomeComponent implements OnInit {
   proximaPergunta() {
     if (this.perguntas.length != 0) {
       this.resetTimer();
+      this.getProgress();
       this.getPerguntaAleatoria();
     } else {
       this.finish = true;
@@ -98,5 +101,12 @@ export class HomeComponent implements OnInit {
 
   getUser() {
     this.userName = localStorage.getItem('name')!;
+  }
+
+  getProgress(): string{
+
+    this.progresso = ((this.perguntaCorrente / this.totalPerguntas)*100).toString();
+    console.log(this.progresso);
+    return this.progresso;
   }
 }

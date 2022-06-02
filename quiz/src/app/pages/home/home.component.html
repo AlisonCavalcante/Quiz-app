@@ -8,6 +8,9 @@
         <h5>Questão {{perguntaCorrente}} de {{totalPerguntas}}</h5>
         <h4>{{time}} sec</h4>
       </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width': progresso + '%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
     </div>
     <div class="card-body">
       <h3>{{ pergunta?.pergunta }}</h3>
