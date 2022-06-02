@@ -7,7 +7,8 @@
             "opcoes": [
                 {
                     "letra": "A",
-                    "opcao": "Linguagem de Marcação de Hipertexto"
+                    "opcao": "Linguagem de Marcação de Hipertexto",
+                    "correta": true
                 },
                 {   
                     "letra": "B",
@@ -21,8 +22,7 @@
                     "letra": "D",
                     "opcao":"Interface de programação de aplicações"
                 }
-            ],
-            "correta": "A"
+            ]
             
         },
         {   
@@ -43,10 +43,11 @@
                 },
                 {
                     "letra": "D",
-                    "opcao":"Nenhuma das Alternativas"
+                    "opcao":"Nenhuma das Alternativas",
+                    "correta": true
                 }
-            ],
-            "correta": "D"
+            ]
+            
             
         }
     ]

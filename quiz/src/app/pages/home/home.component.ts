@@ -36,16 +36,22 @@ export class HomeComponent implements OnInit {
     this.perguntaCorrente++;
   }
 
-  validarResposta(opcaoCorreta: string, resposta: string) {
-    if (resposta == opcaoCorreta) {
+  validarResposta(opcaoCorreta: boolean) {
+    if (opcaoCorreta) {
       this.pontos += 10;
-      this.proximaPergunta();
+      this.timerProximaPergunta();
     } else {
-      this.proximaPergunta();
       if (this.pontos > 0) {
         this.pontos -= 10;
       }
+      this.timerProximaPergunta();
     }
+  }
+
+  timerProximaPergunta(){
+    setTimeout(() => {
+      this.proximaPergunta();
+    }, 1000);
   }
 
   proximaPergunta() {
@@ -69,6 +75,10 @@ export class HomeComponent implements OnInit {
         }
       }
     });
+   this.finishSessaoPerguntas();
+  }
+
+  finishSessaoPerguntas(){
     setTimeout(() => {
       this.interval$.unsubscribe();
       this.finish = true;

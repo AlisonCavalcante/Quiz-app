@@ -8,13 +8,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FinishComponent } from './pages/finish/finish.component';
+import { ChangeBgDirective } from './change-bg.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WelcomeComponent,
-    FinishComponent
+    FinishComponent,
+    ChangeBgDirective
   ],
   imports: [
     BrowserModule,

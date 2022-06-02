@@ -11,10 +11,10 @@
     </div>
     <div class="card-body">
       <h3>{{ pergunta?.pergunta }}</h3>
-      <div class="row button-content" *ngFor="let op of pergunta?.opcoes">
-        <p class="col-1">{{ op.letra }}</p>
+      <div class="row button-content" appChangeBg *ngFor="let op of pergunta?.opcoes" [isCorrect]="op.correta" >
+        <p class="col-1" >{{ op.letra }}</p>
         <button
-          (click)="validarResposta(pergunta.correta, op.letra)"
+          (click)="validarResposta(op?.correta)"
           class="btn col-11"
         >
           {{ op.opcao }}
