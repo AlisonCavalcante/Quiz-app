@@ -22,4 +22,9 @@ export class UsuariosService {
       take(1)
     )
   }
+
+  updateUser(user: IUsuario): Observable<IUsuario>{
+      return this.http.patch<IUsuario>(Constantes.URL_USUARIOS + `${ user.id}`, user);
+  }
+
 }
