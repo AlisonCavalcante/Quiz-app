@@ -9,8 +9,10 @@
     <li>Se resetar a página o Quiz é resetado</li>
   </ol>
   <div class="col-md-4 my-3">
-    <label for="">Entre com seu Nome:</label>
-    <input #name type="text" class="form-control">
+    <form >
+      <label for="">Entre com seu UserName:</label>
+      <input #name type="text" class="form-control">
+    </form>
   </div>
-  <button class="btn btn-primary btn-lg" routerLink="/home" (click)="startQuiz()">Inicie o Quiz</button>
+  <button class="btn btn-primary btn-lg"  (click)="startQuiz()">Inicie o Quiz</button>
 </div>

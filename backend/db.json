@@ -1,55 +1,62 @@
-
+{
+  "usuarios": [
     {
-        "perguntas": [
-        {   
-            "id": 1,
-            "pergunta": "O que significa HTML?",
-            "opcoes": [
-                {
-                    "letra": "A",
-                    "opcao": "Linguagem de Marcação de Hipertexto",
-                    "correta": true
-                },
-                {   
-                    "letra": "B",
-                    "opcao":"Folhas de Estilo Cascata?"
-                },
-                {   
-                    "letra": "C",
-                    "opcao":"JavaScript Object Notation"
-                },
-                {
-                    "letra": "D",
-                    "opcao":"Interface de programação de aplicações"
-                }
-            ]
-            
-        },
-        {   
-            "id": 2,
-            "pergunta": "Qual foi o ano de lançamento do JavaScript?",
-            "opcoes": [
-                {
-                    "letra": "A",
-                    "opcao": "2020"
-                },
-                {
-                    "letra": "B",
-                    "opcao":"2019"
-                },
-                {
-                    "letra": "C",
-                    "opcao":"2018"
-                },
-                {
-                    "letra": "D",
-                    "opcao":"Nenhuma das Alternativas",
-                    "correta": true
-                }
-            ]
-            
-            
-        }
-    ]
+      "id": 1,
+      "nome": "Alison",
+      "pontos": 40
+    },
+    {
+      "nome": "Ayrton",
+      "pontos": 0,
+      "id": 2
     }
-
+  ],
+  "perguntas": [
+    {
+      "id": 1,
+      "pergunta": "O que significa HTML?",
+      "opcoes": [
+        {
+          "letra": "A",
+          "opcao": "Linguagem de Marcação de Hipertexto",
+          "correta": true
+        },
+        {
+          "letra": "B",
+          "opcao": "Folhas de Estilo Cascata?"
+        },
+        {
+          "letra": "C",
+          "opcao": "JavaScript Object Notation"
+        },
+        {
+          "letra": "D",
+          "opcao": "Interface de programação de aplicações"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual foi o ano de lançamento do JavaScript?",
+      "opcoes": [
+        {
+          "letra": "A",
+          "opcao": "2020"
+        },
+        {
+          "letra": "B",
+          "opcao": "2019"
+        },
+        {
+          "letra": "C",
+          "opcao": "2018"
+        },
+        {
+          "letra": "D",
+          "opcao": "Nenhuma das Alternativas",
+          "correta": true
+        }
+      ]
+    }
+  ]
+}

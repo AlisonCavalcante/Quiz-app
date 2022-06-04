@@ -22,6 +22,9 @@
   border-radius: 4px;
   margin: 10px;
 }
+.row-total-perguntas{
+  border: none;
+}
 .button-content{
   display: flex;
   justify-content: center;
