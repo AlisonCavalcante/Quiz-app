@@ -17,6 +17,10 @@ export class UsuariosService {
     )
   }
 
+  getUsers(): Observable<IUsuario[]>{
+    return this.http.get<IUsuario[]>(Constantes.URL_USUARIOS);
+  }
+
   getUser(user: IUsuario): Observable<IUsuario>{
     return this.http.get<IUsuario>(Constantes.URL_USUARIOS + `${'?nome='}${user.nome}`).pipe(
       take(1)
@@ -26,5 +30,7 @@ export class UsuariosService {
   updateUser(user: IUsuario): Observable<IUsuario>{
       return this.http.patch<IUsuario>(Constantes.URL_USUARIOS + `${ user.id}`, user);
   }
-
+  deleteUser(id: number): Observable<IUsuario>{
+    return this.http.delete<IUsuario>(Constantes.URL_USUARIOS + `/${id}`)
+  }
 }
