@@ -3,22 +3,27 @@
     {
       "id": 1,
       "nome": "Alison Rodrigo",
-      "pontos": 40
+      "pontos": 50
     },
     {
       "nome": "Ayrton",
-      "pontos": 0,
+      "pontos": 40,
       "id": 2
     },
     {
-      "nome": "Alison",
-      "pontos": 0,
+      "nome": "Leandro",
+      "pontos": 30,
       "id": 3
     },
     {
-      "nome": "Juliana",
-      "pontos": 0,
+      "nome": "Daniel",
+      "pontos": 20,
       "id": 4
+    },
+    {
+      "nome": "Zezinho",
+      "pontos": 20,
+      "id": 5
     }
   ],
   "perguntas": [

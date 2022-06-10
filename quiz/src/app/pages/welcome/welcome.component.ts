@@ -37,10 +37,11 @@ export class WelcomeComponent implements OnInit, OnDestroy {
       if(res.length !== 0) {
        alert('Usuário Já existe!!!');
       } else if(this.usuario.nome !== '') {
-        this.usuariosService.create(this.usuario).subscribe((res) =>{
-          console.log(res);
-          this.router.navigate(['/home'])
-        });
+        // this.usuariosService.create(this.usuario).subscribe((res) =>{
+        //   console.log(res);
+
+        // });
+        this.router.navigate(['/home'])
       } else {
         this.router.navigate(['/home']);
       }
