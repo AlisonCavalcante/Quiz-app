@@ -1,0 +1,9 @@
+.card-header{
+  background-color: #FCFAF1;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}

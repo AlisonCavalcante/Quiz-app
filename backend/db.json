@@ -9,6 +9,16 @@
       "nome": "Ayrton",
       "pontos": 0,
       "id": 2
+    },
+    {
+      "nome": "Alison",
+      "pontos": 0,
+      "id": 3
+    },
+    {
+      "nome": "Juliana",
+      "pontos": 0,
+      "id": 4
     }
   ],
   "perguntas": [

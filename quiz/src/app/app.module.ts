@@ -9,6 +9,7 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FinishComponent } from './pages/finish/finish.component';
 import { ChangeBgDirective } from './change-bg.directive';
+import { RankingComponent } from './shared/components/ranking/ranking.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChangeBgDirective } from './change-bg.directive';
     HomeComponent,
     WelcomeComponent,
     FinishComponent,
-    ChangeBgDirective
+    ChangeBgDirective,
+    RankingComponent
   ],
   imports: [
     BrowserModule,
